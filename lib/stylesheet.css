@@ -1,0 +1,66 @@
+#XPRMNTL-TOGGLERS {
+  background-color: #D8D8D8;
+  color: #000000;
+  z-index: 19989;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  margin: 0;
+  border: 1px solid black;
+  max-height: 94%;
+  overflow: scroll;
+  padding: 8px;
+  width: 300px;
+}
+
+#XPRMNTL-TOGGLERS h4 {
+  margin: 0;
+  line-height: 25px
+}
+
+#XPRMNTL-TOGGLERS .actions {
+  float: right;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+#XPRMNTL-TOGGLERS .actions span {
+  display: inline-block;
+}
+
+#XPRMNTL-TOGGLERS .actions span a {
+  color: #a55871;
+  text-decoration: none;
+}
+
+#XPRMNTL-TOGGLERS .actions span:before {
+  content: '|';
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+#XPRMNTL-TOGGLERS .actions span:first-child:before {
+  display: none;
+}
+
+#XPRMNTL-TOGGLERS h5 {
+  margin: 10px 0 5px;
+  text-transform: capitalize;
+}
+
+#XPRMNTL-TOGGLERS ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 15px;
+}
+#XPRMNTL-TOGGLERS li {
+
+}
+
+#XPRMNTL-TOGGLERS li input {
+  margin-right: 10px;
+}
+
+
