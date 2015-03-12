@@ -17,7 +17,7 @@
   },
   "peerDependencies": {
     "feature-client": "^0.9.0",
-    "xpr-express": "^1.0.0"
+    "xpr-express": "^1.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
