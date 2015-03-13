@@ -1,9 +1,15 @@
 {
   "name": "xpr-toggle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "User-specific toggling for XPRMNTL feature-client",
   "main": "./lib/xpr-toggle.js",
   "author": "Dan Crews <crewsd@gmail.com>",
+  "keywords": [
+    "experiments",
+    "feature flags",
+    "feature toggles",
+    "XPRMNTL"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/XPRMNTL/xpr-toggle.js.git"
