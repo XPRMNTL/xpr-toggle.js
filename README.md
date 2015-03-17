@@ -1,6 +1,8 @@
-[![XPRMNTL](https://raw.githubusercontent.com/XPRMNTL/XPRMNTL.github.io/master/images/ghLogo.png)](https://github.com/XPRMNTL/XPRMNTL.github.io)
+[![XPRMNTL][logo-image]][logo-url]
 # XPR-Toggle.js
-[![NPM version](https://img.shields.io/npm/v/xpr-toggle.svg)](https://www.npmjs.org/package/xpr-toggle)
+[![NPM version][npm-image]][npm-url]
+[![Downloads][downloads-image]][downloads-url]
+[![Tips][gratipay-image]][gratipay-url]
 
 This is a Node.js plugin for XPRMNTL [feature-client](https://github.com/XPRMNTL/feature-client.js).
 It adds a new express4 middleware (`featureClient.toggle`) that serves client-side javascript for toggling features via the browser.
@@ -71,3 +73,12 @@ You may pass in a config object during initalization:
     }
     ```
     - `xpr.clearExps` accepts/returns nothing and is called when "Reset" is clicked
+
+[logo-image]: https://raw.githubusercontent.com/XPRMNTL/XPRMNTL.github.io/master/images/ghLogo.png
+[logo-url]: https://github.com/XPRMNTL/XPRMNTL.github.io
+[npm-image]: https://img.shields.io/npm/v/xpr-toggle.svg
+[npm-url]: https://www.npmjs.org/package/xpr-toggle
+[downloads-image]: https://img.shields.io/npm/dm/xpr-toggle.svg
+[downloads-url]: https://www.npmjs.org/package/xpr-toggle
+[gratipay-image]: https://img.shields.io/gratipay/dncrews.svg
+[gratipay-url]: https://www.gratipay.com/dncrews/

@@ -1,6 +1,6 @@
 {
   "name": "xpr-toggle",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "User-specific toggling for XPRMNTL feature-client",
   "main": "./lib/xpr-toggle.js",
   "author": "Dan Crews <crewsd@gmail.com>",
