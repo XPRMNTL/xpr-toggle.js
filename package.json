@@ -1,6 +1,6 @@
 {
   "name": "xpr-toggle",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "User-specific toggling for XPRMNTL feature-client",
   "main": "./lib/xpr-toggle.js",
   "author": "Dan Crews <crewsd@gmail.com>",
@@ -22,8 +22,8 @@
     "debug": "^2.1.2"
   },
   "peerDependencies": {
-    "feature-client": "^0.9.0",
-    "xpr-express": "^1.0.1"
+    "feature-client": "^1.0.0",
+    "xpr-express": "^1.0.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
