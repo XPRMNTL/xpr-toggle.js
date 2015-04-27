@@ -42,8 +42,22 @@ To show the toggles, you must have the script tag on the page, and you may eithe
 
 1. Add a new query parameter of "`listEx`"
   - `[url]/[path]/?listEx`
+  - `[url]/[path]/?listEx#/some/spa/stuff`
   - `[url]/[path]/?query=val&query2=val&listEx`
 2. From the JavaScript console, you may call `xpr.listEx()`
+
+#### Reload
+If at any time, you want to refetch your user's xpr data, you may call `xpr.reload()` which will
+refresh that data via an xhr request.
+
+#### Events
+For integration into external libraries, you may listen for updates.
+```js
+xpr.on('update', function(e, xprData) {
+  // `e` is a JS CustomEvent
+  // `xprData` is the current configuration.
+});
+```
 
 #### Configuration
 
@@ -53,8 +67,10 @@ You may pass in a config object during initalization:
   featureClient.use(xprExpress(config));
 ```
 
-  - `config.url` - The url from which you want to serve the client component
-    - defaults to '/xprmntl/xpr-toggle.js'
+  - `config.scriptUrl` - The url from which you want to serve the client component
+    - defaults to `/xprmntl/xpr-toggle.js`
+  - `config.dataUrl` - The url from which you have the option of reloading the XPRMNTL configuration data.
+    - defaults to `/xprmntl/xpr-data.json`
   - `config.defaultSave` - Setting this to `false` will prevent creation of `xpr.saveExps` and `xpr.clearExps` on the client.
     - This will cause errors if you have not filled this gap properly.
     - `xpr.saveExps` shall be a function that accepts a userID, and an object in Experiment Format and is called when a toggle is changed:
@@ -72,7 +88,7 @@ You may pass in a config object during initalization:
       shared: {} // Same format as `this.app`
     }
     ```
-    - `xpr.clearExps` accepts/returns nothing and is called when "Reset" is clicked
+    - `xpr.clearExps` accepts a callback and is called when "Reset" is clicked. If you do not want the page to reload do not call the callback, but probably do immediately call `xpr.reload()`
 
 [logo-image]: https://raw.githubusercontent.com/XPRMNTL/XPRMNTL.github.io/master/images/ghLogo.png
 [logo-url]: https://github.com/XPRMNTL/XPRMNTL.github.io
