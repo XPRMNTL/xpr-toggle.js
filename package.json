@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/XPRMNTL/xpr-toggle.js",
   "dependencies": {
-    "debug": "^2.1.2"
+    "debug": "^3.1.0"
   },
   "peerDependencies": {
     "feature-client": "^1.0.0",
